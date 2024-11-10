@@ -1,0 +1,10 @@
+/* src/components/About.css */
+.about {
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .about h1 {
+    font-size: 2em;
+  }
+  
