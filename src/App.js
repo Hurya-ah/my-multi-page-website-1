@@ -6,14 +6,15 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import About from './components/About';
 import Services from './components/Services';
-import './styles/main.css';
+import './App.css';  // Main CSS for App
 
-function App() {
+const App = () => {
   return (
     <Router>
       <Header />
       <div className="content">
         <Routes>
+          {/* Updated from <Switch> to <Routes> */}
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
@@ -22,6 +23,6 @@ function App() {
       <Footer />
     </Router>
   );
-}
+};
 
 export default App;

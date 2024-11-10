@@ -1,20 +1,13 @@
 /* src/components/Services.css */
 .services {
-    padding: 40px 0;
-    text-align: center;
-  }
-  
-  .services h1 {
-    font-size: 2em;
-  }
-  
-  .services ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .services ul li {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-  }
-  
+  text-align: center;
+  padding: 50px;
+}
+
+.services h1 {
+  font-size: 2.5em;
+}
+
+.services p {
+  font-size: 1.2em;
+}
