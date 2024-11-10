@@ -2,24 +2,20 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
-import Footer from './components/Footer';
 import Home from './components/Home';
-import About from './components/About';
-import Services from './components/Services';
-import './App.css';  // Main CSS for App
+import About from './components/About';  // Create this component
+import Services from './components/Services';  // Create this component
+import Footer from './components/Footer';  // Create this component
 
 const App = () => {
   return (
     <Router>
       <Header />
-      <div className="content">
-        <Routes>
-          {/* Updated from <Switch> to <Routes> */}
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+      </Routes>
       <Footer />
     </Router>
   );

@@ -1,11 +1,10 @@
 // src/components/Footer.js
 import React from 'react';
-import './Footer.css';  // Import custom CSS for Footer
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <p>© 2024 My Multi-page Website. All rights reserved.</p>
+    <footer className="bg-blue-500 text-white p-4 text-center">
+      <p>&copy; 2024 Your Company. All Rights Reserved.</p>
     </footer>
   );
 };

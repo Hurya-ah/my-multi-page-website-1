@@ -1,17 +1,16 @@
 // src/components/Header.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Header.css';  // Import custom CSS for Header
 
 const Header = () => {
   return (
-    <header className="header">
-      <nav>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/services">Services</Link></li>
-        </ul>
+    <header className="bg-blue-500 text-white p-4">
+      <nav className="flex justify-between">
+        <Link to="/" className="text-lg font-bold">Home</Link>
+        <div>
+          <Link to="/about" className="mr-4">About</Link>
+          <Link to="/services" className="mr-4">Services</Link>
+        </div>
       </nav>
     </header>
   );

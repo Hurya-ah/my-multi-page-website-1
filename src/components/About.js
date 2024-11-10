@@ -1,12 +1,11 @@
 // src/components/About.js
 import React from 'react';
-import './About.css';  // Import custom CSS for About page
 
 const About = () => {
   return (
-    <div className="about">
-      <h1>About Us</h1>
-      <p>This is the about page where you can learn more about us.</p>
+    <div className="text-center py-20">
+      <h1 className="text-3xl font-bold mb-4">About Us</h1>
+      <p className="text-lg">We are passionate about delivering quality services.</p>
     </div>
   );
 };

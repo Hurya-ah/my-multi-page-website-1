@@ -1,12 +1,15 @@
 // src/components/Services.js
 import React from 'react';
-import './Services.css';  // Import custom CSS for Services page
 
 const Services = () => {
   return (
-    <div className="services">
-      <h1>Our Services</h1>
-      <p>We offer various services to help you grow your business.</p>
+    <div className="text-center py-20 bg-gray-100">
+      <h1 className="text-3xl font-bold mb-4">Our Services</h1>
+      <ul className="list-none space-y-4">
+        <li className="text-lg">Web Development</li>
+        <li className="text-lg">SEO Optimization</li>
+        <li className="text-lg">Graphic Design</li>
+      </ul>
     </div>
   );
 };
